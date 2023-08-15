@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/projetos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menus" class="conteiner">
+
+        <div class="barr"> 
+        
+          
+    
+            <header>
+                <a id="menu"  class="sidem" href="#" onclick="Abrir()"> &#9776 Menu </a>
+                 
+                 
+              
+            </header>
+        <!---->
+        </div>
+
+        <div Class="conteu">
+            <h1 class="top">Projetos</h1>
+    
+       <ul type="none">
+    
+        <li class="list">
+            <div class="listd"><img src="NovasImg/target.png" alt=""></div>
+            <p class="listp">Neste curso aprendemos a trabalhar com estruturas de repetição, condicionais, variaveis. Aprendendo a pensar de forma logica.No projeto realizado durante o curso, desenvolvemos um jogo simpres usando o canvas e o JavaScript <a href="acerte_o_alvo.html">Confira</a></p>        
+        
+        </li>
+       
+        <li>
+            <div><img src="NovasImg/money.png" alt=""></div>
+            <p>Neste curso de CSS e HTML aprendemos a fazer uma pagina estatica utilizando o css e o html personalisando ela e a deixando responsiva, no final do curso fizemos o site da "Barbearia alura" <a href="https://github.com/RobertMarcos/Conversor_de_moeda" target="_blank">Confira</a></p>        
+        
+        </li>
+
+        <li>
+            <div><img src="NovasImg/conversor.png" alt=""></div>
+            <p>durante o curso de java, aprendemos os conseitos basicos da linguagem. O curso teve como enfaze a passar os conseitos de programação orientada a objeto, mostrando também a parte de herança e polimorfismo, não deixando de apresentar as principais bibliotecas da linguagem como a java.lang e a java.util, no final do curso realizamos a montagem de um conversor de moedas usando a IDE  eclipse  <a href="decodificador.html">Confira</a></p>        
+        
+        </li>
+
+        <li>
+            <div><img src="NovasImg/barbearia.png" alt=""></div>
+            <p>Neste sobre bisness agilit aprendemos a pensar de forma objetiva e a administrar melhor o nosso tempo, focando e trabalhando em equipe, para atingirmos o melhor resultado possivel. <a href="#">Confira</a></p>        
+        
+        </li>
+
+
+    
+    </ul>
+   
+</div>
+   <!---->
+   <div Class="side">
+
+    <div class="imgsid"><a href="sobre.html"><img src="NovasImg/perfil.png"></a></div>
+
+    <div class="text"><p>" O homem só precisa de duas coisas para conquisar os seus Sonhos, <strong>criatividade e perseverança</strong>" <br> <em>-Robert Marcos-</em></p></div>
+   
+    <nav>
+
+        <a href="index.html">Home</a>
+        
+        <a href="projetos.html">Projetos</a>
+      
+        <a href="sobre.html">sobre</a>
+
+        
+     
+
+</nav>
+
+
+<nav>
+    <h3>Redes Sociais:</h3>
+    <a href="https://github.com/RobertMarcos" target="_blank"> GitHub</a>
+    <a href="https://www.linkedin.com/in/robert-dos-prazeres-marcos-dev-back-end" target="_blank">linkedin</a>
+
+</nav>
+</div>
+
+<!---->
+<div class="rodape">
+        <p style="color: white;">&#169;Copyright</p>
+
+</div>
+
+<!---->
+</div>
+
+    <script>
+        var abri = true;
+        var fechar = false;
+    
+        function Abrir(){
+            if( abri == true){
+                document.getElementById("menus").style.gridTemplateColumns=("200px");
+                abri = false;
+                
+            }else{ document.getElementById("menus").style.gridTemplateColumns=("0px");
+        abri = true;
+        }
+    
+    
+    
+        }
+    </script>
+</body>
+</html>

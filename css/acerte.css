@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:'Playfair', serif;
+   color: white;
+}
+
+
+.conteiner{
+ background-color: black;
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-rows: 8% auto auto 5%;
+    grid-template-columns: 200px;
+    
+    grid-template-areas: 
+    "barr barr barr"
+    "side conteu conteu"
+    "side conteu conteu"
+    "side rodape rodape"
+    
+    ;
+    
+}
+/*barra*/
+.barr{
+    position: relative;
+
+    grid-area: barr;
+    
+    
+}
+
+.barr header{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap:24%;
+    grid-template-columns: 24% 33%;
+    grid-template-areas: "sidem logo";
+    align-content: center;
+   
+
+}
+.sidem{
+  justify-self:start;
+    padding: 0%;
+    grid-area: sidem;
+  align-self:  center;
+    margin-left: 0px;
+ }
+
+ .logo{
+ 
+    
+    background-image: linear-gradient(to top, blue,green);
+    background-clip: text;
+    color:black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    
+    grid-area: logo;
+    
+ }
+
+ 
+a{
+    background-image: linear-gradient(to top, blue,green);
+    background-clip: text;
+    color:black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    text-shadow: 20px;
+    font-size: 20px;
+    padding:1%;
+}
+a:hover{
+    background-image: linear-gradient(to top, blue,red);
+    background-clip: text;
+    color:black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+ /*Banner*/
+/*
+.banner{
+    background-color: red;
+    grid-area: banner;
+    
+}
+.banner img{
+    width:100%;
+    height:100%;
+}
+
+*/
+
+
+/*Coneudo*/
+.conteu{
+    background-image: linear-gradient(to top,black, blue,black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: conteu;
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.top{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to top, blue,red);
+    background-clip: text;
+    color:black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+button{
+   
+    background-image: linear-gradient(to top, blue,red);
+   
+
+    }
+
+    
+
+
+    h2{
+        background-image: linear-gradient(to top, blue,red);
+        background-clip: text;
+        color:black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+   
+   
+
+    canvas{
+        border: 1px solid black;
+        border-image: linear-gradient(to top, blue,red);
+        border-image-slice: 1;
+        background-color: black;
+    }
+
+    .conteu div>p{
+    
+        font-size: 30px;
+    }
+
+    .conteu>div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    
+   
+
+/*Side bar*/
+.side{
+    background-color: black;
+    grid-area:side;
+    overflow: hidden;
+    overflow: auto;
+}
+.side::-webkit-scrollbar{
+    width: 0.5px;
+}
+.imgsid{
+
+margin: auto;
+    width: 100%;
+    height: 25%;
+    position: relative;
+    top: 20px;
+
+}
+.imgsid img{
+    width: 100%;
+    height:100%;
+    border: 1px solid black;
+    border-radius: 50% ;
+}
+.text p{
+    position: relative;
+    top:50px;
+    text-align: center;
+    color: white;
+}
+nav{
+    position: relative;
+    top:70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h3{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    background-image: linear-gradient(to top, blue,red);
+    background-clip: text;
+    color:black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+nav a {
+   display: inline-flex;
+ justify-content: center;
+ padding: 20px;
+    
+}
+
+nav a:hover{
+  
+   text-decoration: underline;
+    
+}
+
+
+/*rodape*/
+.rodape{
+    background-color: black;
+    grid-area: rodape;
+    text-align: center;
+    align-items: center;
+
+}
+.ndsp{
+    display: none !important;
+}
+
+@media screen and (max-width:700px) {
+    .conteu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    canvas{
+        display: none;
+    }
+  button{
+    display: none;
+  }
+  
+
+    .conteiner{
+        grid-template-columns: 0;
+    }
+    
+
+}
