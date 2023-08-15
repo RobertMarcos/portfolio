@@ -186,38 +186,61 @@ button{
     grid-area:side;
     overflow: hidden;
     overflow: auto;
+    display: grid;
+    grid-template-areas: 
+    "perfi"
+    "text"
+    "menu1"
+    "social"
+    
+    ;
+
+    gap:30px;
 }
 .side::-webkit-scrollbar{
     width: 0.5px;
 }
-.imgsid{
 
+
+.perfil{
+grid-area: perfil;
 margin: auto;
-    width: 100%;
-    height: 25%;
-    position: relative;
-    top: 20px;
+    width: 200px;
+    height: 160px;
+   
+   
 
 }
-.imgsid img{
+.perfil img{
+
     width: 100%;
     height:100%;
     border: 1px solid black;
     border-radius: 50% ;
 }
+
+
+.text{
+    grid-area: text;
+}
+
 .text p{
-    position: relative;
-    top:50px;
+   
     text-align: center;
     color: white;
 }
-nav{
+
+.menus{
     position: relative;
-    top:70px;
+    top: 50px;
+    grid-area: menu1;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
+
+
 h3{
     position: relative;
     top: 10px;
@@ -229,7 +252,8 @@ h3{
     -webkit-text-fill-color: transparent;  
 }
 nav a {
-   display: inline-flex;
+   
+    display: inline-flex;
  justify-content: center;
  padding: 20px;
     
@@ -241,6 +265,14 @@ nav a:hover{
     
 }
 
+.social{
+    position: relative;
+    top: 130px;
+    height: auto;
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+}
 
 /*rodape*/
 .rodape{
