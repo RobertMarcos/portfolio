@@ -25,11 +25,11 @@
     <!---->
     
     <div Class="conteu">
-            <h1 class="top">Java FullStak</h1>
+            <h1 class="top">Robert-Portifolio</h1>
 
     <!--box1-->
 
-            <div class="item1">
+            <div  class="item1">
                 
                 <div class="item-img">
                     <img src="Imagens/acerte.png" alt="">
@@ -43,7 +43,7 @@
             </div>
     <!--box2-->
 
-            <div class="item1">
+            <div  class="item1">
                 
                 <div class="item-img">
                     <img src="Imagens/conhome.png.png" alt="">
@@ -58,7 +58,7 @@
 
     <!--box3-->
 
-            <div class="item1">
+            <div  class="item1">
                 
                 <div class="item-img">
                     <img src="Imagens/conversom.png" alt="">
@@ -71,8 +71,25 @@
                     </div>
             </div>
 
-    <!--box4-->
-            <div class="item1">
+    <!--Box4-->
+
+            <div  class="item1">
+                        
+                <div class="item-img">
+                    <img src="Imagens/Batalha_B.png" alt="">
+                </div>
+                
+                    <div class="item-txt">
+                        <span>Robert Marcos</span>
+                        <p>Quem ira vencer essa incrivel disputa ? O nosso heroi ou o seu arqinimigo </p>
+                        <div div class="colo"><a href="sobre.html">confira-></a></div>
+                    </div>
+            </div>
+    
+
+
+    <!--box5-->
+            <div id="it1" class="item1">
                 
                 <div class="item-img">
                     <img src="Imagens/sobre.png" alt="">
@@ -125,7 +142,37 @@
 <!---->
     </div>
 
-<script src="js/Side.js">  </script>
+
+
+
+
+<script> 
+    
+ // menu
+ let abri = true;
+ let fechar = false;
+
+ function Abrir(){
+     if( abri == true){
+         document.getElementById("menus").style.gridTemplateColumns=("200px");
+         document.getElementById("it1").style.marginBottom=("50px");
+         abri = false;
+         
+     }else{ document.getElementById("menus").style.gridTemplateColumns=("0px");
+ 
+     document.getElementById("it1").style.marginBottom=("0px");
+     abri = true;
+ 
+ 
+
+}
+
+
+
+ }
+
+
+</script>
 
 </body>
 </html>

@@ -100,8 +100,8 @@ a:hover{
     grid-template-areas: 
     "titu titu "
     "img sob"
-    "img2 img3"
-    "img2 cont"
+    "cont img2"
+    "img3 img2"
     ;
     gap: 10px;
   
@@ -242,21 +242,28 @@ border-image-slice: 1;
     background-image: linear-gradient(to top, blue,red);
 }
 
-.contato > span{
+.contato > span {
     color:white;
     font-weight: bolder;
     font-size: 20px;
 }
+
+
+.contato > p {
+    color:white;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
 
 .img3{
     grid-area: img3;
     width: 403px;
     height: 218px;
     justify-self: center;
-    border: 1px solid transparent;
-    border-image:linear-gradient(to top, blue,red); ;
-    border-image-slice: 1;
-    /**/
+   
+    
     display: flex;
    align-items: center;
    justify-content: center;
@@ -264,6 +271,9 @@ border-image-slice: 1;
    gap: 20px;
    
 }
+
+
+
 .img3 img:hover{
     transform: rotate(1turn);
 }
@@ -271,7 +281,7 @@ border-image-slice: 1;
     margin-right: 20px;
 }
 .img3 > div{
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
@@ -368,7 +378,7 @@ nav a:hover{
 
 .social{
     position: relative;
-    top: 130px;
+    top: 100px;
     height: auto;
     grid-area: social;
     display: flex;
@@ -382,24 +392,18 @@ nav a:hover{
     align-items: center;
 
 }
-
-
-@media screen and (max-width:1068px) {
+@media screen and (max-width:700px) {
     .conteu{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        
     }
+.img3{
+    display: none;
+}
+
 .img1{
     display: none;
-
-}
-.text1{
-    width: 70%;
-    height: auto;
-    overflow: auto;
 }
 
     .conteiner{

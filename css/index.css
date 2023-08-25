@@ -145,9 +145,12 @@ a:hover{
  border-radius: 30%;
  border-image:linear-gradient(to top, blue,red);
  border-image-slice: 1;
-margin-bottom: 10%;
 cursor: pointer;
+}
 
+.item1:last-child{
+
+    margin-bottom: 50px;
 
 }
 
@@ -297,7 +300,7 @@ nav a {
    
     display: inline-flex;
  justify-content: center;
- padding: 30px;
+ padding: 20px;
     
 }
 
@@ -309,20 +312,19 @@ nav a:hover{
 
 .social{
     position: relative;
-    top: 130px;
+    top: 100px;
     height: auto;
     grid-area: social;
     display: flex;
     flex-direction: column;
 }
-
 /*rodape*/
 .rodape{
     background-color: black;
     grid-area: rodape;
     text-align: center;
     align-items: center;
-    
+
 }
 @media screen and (max-width:700px) {
     .conteu{
@@ -335,4 +337,8 @@ nav a:hover{
     .conteiner{
         grid-template-columns: 0;
     }
+
+
+    
+
 }
